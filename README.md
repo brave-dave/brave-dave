@@ -21,15 +21,20 @@ This repository contains my personal portfolio website, which you can visit at [
 
 ## Development
 
-This project uses [pnpm](https://pnpm.io) as the package manager. For detailed setup instructions, including how to install Node.js via nvm and pnpm, please refer to our [Setup Guide](SETUP.md).
+This project uses [SST](https://sst.dev) for deployment and local development. SST provides a better development experience by:
+
+- Running your Next.js app in a serverless environment locally
+- Simulating AWS services for local development
+- Providing hot reloading for both frontend and backend changes
+- Enabling testing of serverless functions locally
 
 Quick start:
 ```bash
 # Install dependencies
 pnpm install
 
-# Run the development server
-pnpm dev
+# Start the SST development environment
+pnpm sst
 ```
 
 Then open [http://localhost:3000](http://localhost:3000) in your browser.

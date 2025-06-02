@@ -94,10 +94,26 @@ Now that you have the prerequisites installed, you can set up the project:
 ```bash
 pnpm install
 ```
-4. Start the development server:
+
+4. Start the SST development environment:
 ```bash
-pnpm dev
+pnpm sst
 ```
+
+## Development Workflow
+
+When you run `pnpm sst`, SST will:
+1. Start a local development environment that simulates AWS services
+2. Deploy your Next.js app to this local environment
+3. Watch for changes in your code and automatically redeploy
+4. Provide hot reloading for both frontend and backend changes
+5. Enable local testing of serverless functions
+
+This is different from running `next dev` directly because:
+- It runs your app in a serverless environment, matching production
+- It simulates AWS services locally
+- It allows testing of serverless functions and AWS integrations
+- It provides a more accurate representation of how your app will run in production
 
 ## Deployment
 

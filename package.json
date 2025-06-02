@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "sst": "sst dev",
-    "build": "sst build",
+    "build": "next build",
     "deploy": "sst deploy",
     "remove": "sst remove",
     "console": "sst console",
