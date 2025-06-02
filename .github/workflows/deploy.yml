@@ -33,4 +33,4 @@ jobs:
           aws-region: eu-central-1
 
       - name: Deploy SST to production
-        run: pnpm sst deploy --stage production
+        run: pnpm run deploy --stage production
