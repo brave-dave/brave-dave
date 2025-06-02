@@ -10,13 +10,10 @@ I specialize in modern web development with a strong focus on:
 - Full-stack JavaScript/TypeScript development
 - Creating engaging and intuitive user experiences
 
-## Portfolio Website
+## My Portfolio
 
-Visit my portfolio website at [brave-dave.com](https://brave-dave.com) to see my latest projects and learn more about my work.
+This repository contains my personal portfolio website, which you can visit at [brave-dave.com](https://brave-dave.com). Built with modern web technologies including:
 
-## This Project
-
-This is my personal portfolio website built with:
 - [Next.js](https://nextjs.org) - The React framework for production
 - Modern web technologies and best practices
 - Optimized performance and SEO
