@@ -14,12 +14,14 @@ export default $config({
         new sst.aws.Nextjs("brave-dave-website", {
             path: ".",
             openNextVersion: "3.3.1",
-            domain: {
-                name: "bravedave.com",
-                aliases: ["www.bravedave.com"],
-                dns: false,
-                cert: process.env.CERTIFICATE_ARN,
-            },
+            ...($app.stage === "production" ? ({
+                domain: {
+                    name: "bravedave.com",
+                    aliases: ["www.bravedave.com"],
+                    dns: false,
+                    cert: process.env.CERTIFICATE_ARN,
+                }
+            }) : {}),
         });
     },
 }); 
