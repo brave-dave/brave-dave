@@ -1,3 +1,6 @@
+import Button from '@/src/components/Button';
+import Card from '@/src/components/Card';
+import Typography from '@/src/components/Typography';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -17,66 +20,99 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto">
-      {/* Hero Section */}
-      <section className="mb-12">
-        <h1 className="text-4xl font-bold mb-4">About Me</h1>
-        <p className="text-xl text-gray-600">
-          Software Engineer passionate about building innovative solutions and creating impactful digital experiences.
-        </p>
-      </section>
+    <div className="py-12 px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto space-y-12">
+        <Card as="section" className="transform transition-all duration-300 hover:shadow-lg dark:hover:shadow-gray-700/30">
+          <Typography variant="lg" className="text-center leading-relaxed">
+            Software Engineer passionate about building innovative solutions and creating impactful digital experiences.
+          </Typography>
+        </Card>
 
-      {/* Bio Section */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Bio</h2>
-        <div className="prose prose-lg">
-          <p className="mb-4">
-            [Your compelling bio will go here. This is a placeholder for your personal story,
-            professional journey, and what drives you in your career.]
-          </p>
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Skills & Expertise</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-medium mb-3">Technical Skills</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-600">
-              <li>Web Development (Frontend & Backend)</li>
-              <li>Cloud Technologies</li>
-              <li>DevOps & CI/CD</li>
-              <li>Database Management</li>
-              <li>System Architecture</li>
-            </ul>
+        {/* Bio Section */}
+        <section className="relative">
+          <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
+          <div className="pl-6">
+            <Typography variant="h2" className="mb-6">Bio</Typography>
+            <Typography variant="md" secondary className="leading-relaxed">
+              [Your compelling bio will go here. This is a placeholder for your personal story,
+              professional journey, and what drives you in your career.]
+            </Typography>
           </div>
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-medium mb-3">Soft Skills</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-600">
-              <li>Problem Solving</li>
-              <li>Team Collaboration</li>
-              <li>Project Management</li>
-              <li>Technical Leadership</li>
-              <li>Communication</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Contact CTA */}
-      <section className="text-center bg-gray-50 p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">Let&apos;s Connect</h2>
-        <p className="text-gray-600 mb-6">
-          Interested in working together? Feel free to reach out!
-        </p>
-        <a
-          href="/contact"
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          Get in Touch
-        </a>
-      </section>
+        {/* Skills Section */}
+        <section>
+          <Typography variant="h2" className="mb-8">Skills & Expertise</Typography>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card className="transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 dark:hover:shadow-gray-700/30">
+              <Typography variant="h3" className="mb-4">Technical Skills</Typography>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">Web Development (Frontend & Backend)</Typography>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">Cloud Technologies</Typography>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">DevOps & CI/CD</Typography>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">Database Management</Typography>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">System Architecture</Typography>
+                </li>
+              </ul>
+            </Card>
+            <Card className="transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 dark:hover:shadow-gray-700/30">
+              <Typography variant="h3" className="mb-4">Soft Skills</Typography>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">Problem Solving</Typography>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">Team Collaboration</Typography>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">Project Management</Typography>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">Technical Leadership</Typography>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mr-3"></span>
+                  <Typography variant="md">Communication</Typography>
+                </li>
+              </ul>
+            </Card>
+          </div>
+        </section>
+
+        {/* Contact CTA */}
+        <Card as="section" className="text-center transform transition-all duration-300 hover:shadow-lg dark:hover:shadow-gray-700/30">
+          <Typography variant="h2" className="mb-6">Let&apos;s Connect</Typography>
+          <Typography variant="lg" secondary className="mb-8 max-w-2xl mx-auto">
+            Interested in working together? Feel free to reach out!
+          </Typography>
+          <Button
+            as="a"
+            href="/contact"
+            size="lg"
+            className="transform transition-all duration-300 hover:scale-105"
+          >
+            Get in Touch
+          </Button>
+        </Card>
+      </div>
     </div>
   );
 }
