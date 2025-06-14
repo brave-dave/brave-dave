@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "sst": "sst dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
-    "deploy": "sst deploy",
-    "remove": "sst remove",
-    "console": "sst console",
-    "typecheck": "tsc --noEmit"
+    "start": "next start",
+    "lint": "next lint",
+    "set:aws": "bash scripts/set-aws-credentials.sh",
+    "local": "pnpm set:aws && sst dev",
+    "deploy": "pnpm set:aws && sst deploy",
+    "remove": "pnpm set:aws && sst remove",
+    "console": "pnpm set:aws && sst console",
+    "typecheck": "tsc --noEmit",
+    "changelog": "bash scripts/git-changelog.sh",
+    "send:deploy:update": "bash scripts/send-deploy-update.sh"
   },
   "dependencies": {
     "@aws-sdk/client-cloudfront": "^3.0.0",
