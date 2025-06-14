@@ -1,7 +1,7 @@
 import Card from '@/src/components/Card';
 import Container from '@/src/components/Container';
 import Typography from '@/src/components/Typography';
-import { ContactForm } from '@/src/features/Contact/components/ContactForm';
+import { ContactForm } from '@/src/sections/Contact/components/ContactForm';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
