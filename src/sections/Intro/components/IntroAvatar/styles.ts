@@ -8,7 +8,7 @@ export const introAvatarStyles = {
     gap: 'gap-2',
   },
   avatar: {
-    width: 'w-md',
+    width: 'w-3xs',
     height: 'h-auto',
     borderRadius: 'rounded-full',
   },

@@ -1,10 +1,16 @@
-import { TailwindComponent } from '@/src/components/TailwindComponent';
+import {
+  TailwindComponent,
+  TailwindStyles,
+} from '@/src/components/TailwindComponent';
 import Image from 'next/image';
 import { introAvatarStyles } from './styles';
-import { Typography } from '@/src/components/Typography';
 
-export const IntroAvatar = () => (
-  <TailwindComponent as="div" styles={introAvatarStyles.wrapper}>
+type IntroAvatarProps = {
+  styles?: TailwindStyles;
+};
+
+export const IntroAvatar = ({ styles }: IntroAvatarProps) => (
+  <TailwindComponent as="div" styles={[introAvatarStyles.wrapper, styles]}>
     <TailwindComponent
       as={Image}
       src="/images/bravedave_avatar.png"
@@ -13,6 +19,5 @@ export const IntroAvatar = () => (
       width={100}
       height={100}
     />
-    <Typography variant="displayMediumEmphasized">Brave Dave</Typography>
   </TailwindComponent>
 );

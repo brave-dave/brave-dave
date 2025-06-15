@@ -1,18 +1,27 @@
-import { TailwindComponent } from '@/src/components/TailwindComponent';
+import { Card } from '@/src/components/Card';
 import { Typography } from '@/src/components/Typography';
+import { introCardStyles } from './styles';
 
 export const IntroCard = () => (
-  <TailwindComponent as="div">
-    <Typography variant="displayMediumEmphasized">
-      Hi, I&apos;m Davide Bruno
+  <Card styles={introCardStyles.root}>
+    <Typography
+      variant="displaySmallEmphasized"
+      as="h1"
+      styles={introCardStyles.title}
+    >
+      Hi, I&apos;m Bruno Davide
     </Typography>
-    <Typography variant="bodyLarge">
+    <Typography as="p" variant="bodyLarge">
       Senior Software Engineer, focused on building great experiences through
       React, TypeScript, and care for detail.
     </Typography>
-    <Typography variant="bodyLarge">
+    <Typography
+      as="p"
+      variant="bodyLarge"
+      styles={introCardStyles.secondParagraph}
+    >
       Currently based in Italy and Gothenburg, open to remote work and exciting
       collaborations.
     </Typography>
-  </TailwindComponent>
+  </Card>
 );

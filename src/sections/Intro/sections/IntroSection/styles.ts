@@ -1,16 +1,29 @@
-import { TailwindStyles } from '@/src/components/TailwindComponent';
+import { TailwindStylesMulti } from '@/src/components/TailwindComponent';
 
-export const SectionStyles: TailwindStyles = {
-  display: 'flex',
-  flexDirection: 'flex-col',
-  alignItems: 'items-center',
-  justifyContent: 'justify-center',
-  height: 'h-screen',
-  width: 'w-full',
-  padding: 'p-4',
-  gap: 'gap-4',
-  backgroundColor: 'bg-blue-900',
-  color: 'text-gray-900',
-  fontFamily: 'font-sans',
-  fontSize: 'text-lg',
-};
+export const sectionStyles = {
+  root: {
+    backgroundColor: 'bg-neutral-50',
+    $dark: {
+      backgroundColor: 'dark:bg-neutral-900',
+    },
+    height: 'h-screen',
+    width: 'w-full',
+    display: 'flex',
+    flexDirection: 'flex-row',
+    alignItems: 'items-center',
+    justifyContent: 'justify-center',
+  },
+  content: {
+    display: 'flex',
+    flexDirection: 'flex-row',
+    alignItems: 'items-stretch',
+    justifyContent: 'justify-center',
+    gap: 'gap-8',
+    margin: 'm-auto',
+  },
+  avatar: {
+    flexBasis: 'basis-auto',
+    flexGrow: 'grow-0',
+    flexShrink: 'shrink-0',
+  },
+} satisfies TailwindStylesMulti;
