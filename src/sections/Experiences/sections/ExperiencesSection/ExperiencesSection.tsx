@@ -1,9 +1,9 @@
-import { TailwindComponent } from '@/src/components/TailwindComponent';
 import { SectionStyles } from './styles';
+import { Section } from '@/src/components/Section';
 
 export function ExperiencesSection() {
   return (
-    <TailwindComponent as="section" styles={SectionStyles}>
+    <Section styles={SectionStyles}>
       Octostar – Senior Software Developer Feb 2025 – Present (Contract)
       Developing and improving frontend architecture while collaborating across
       teams to deliver core features in a hybrid product company. QA Ltd / Cloud
@@ -23,6 +23,6 @@ export function ExperiencesSection() {
       For The Win – Framework & Game Developer May 2017 – Aug 2019 First in game
       QA, then in framework development. Built tooling and maintained frameworks
       that powered game dev pipelines. Shipped successful casino titles.
-    </TailwindComponent>
+    </Section>
   );
 }

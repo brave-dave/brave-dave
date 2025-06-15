@@ -1,13 +1,7 @@
 import { TailwindStylesMulti } from '@/src/components/TailwindComponent';
 
-export const sectionStyles = {
+export const introSectionStyles = {
   root: {
-    backgroundColor: 'bg-neutral-50',
-    $dark: {
-      backgroundColor: 'dark:bg-neutral-900',
-    },
-    height: 'h-screen',
-    width: 'w-full',
     display: 'flex',
     flexDirection: 'flex-row',
     alignItems: 'items-center',
