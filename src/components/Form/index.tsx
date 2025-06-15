@@ -1,6 +1,6 @@
 'use client';
 import Button from '@/src/components/Button';
-import Typography from '@/src/components/Typography';
+import { Typography } from '@/src/components/Typography';
 import { ReactNode } from 'react';
 
 interface FormProps {

@@ -1,7 +1,15 @@
-import { TailwindStyles } from '@/src/components/TailwindComponent';
+import { TailwindStylesMulti } from '@/src/components/TailwindComponent';
 
-export const AvatarStyles: TailwindStyles = {
-  width: 'w-md',
-  height: 'h-auto',
-  borderRadius: 'rounded-full',
-};
+export const introAvatarStyles = {
+  wrapper: {
+    display: 'flex',
+    flexDirection: 'flex-col',
+    alignItems: 'items-center',
+    gap: 'gap-2',
+  },
+  avatar: {
+    width: 'w-md',
+    height: 'h-auto',
+    borderRadius: 'rounded-full',
+  },
+} satisfies TailwindStylesMulti;
