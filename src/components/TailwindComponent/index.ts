@@ -1,1 +1,1 @@
-export * from "./TailwindComponent";
+export * from './TailwindComponent';

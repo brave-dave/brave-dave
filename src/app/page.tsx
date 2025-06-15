@@ -13,10 +13,8 @@ export const metadata: Metadata = {
     title: 'Brave Dave',
     description: 'Something awesome is coming soon. Stay tuned!',
   },
-}
+};
 
 export default function Home() {
-  return (
-    null
-  );
+  return null;
 }
