@@ -5,9 +5,6 @@ export const AboutCard = () => {
   return (
     <Card>
       <Typography>
-        <Typography as="h2" variant="titleLarge">
-          About Me
-        </Typography>
         <Typography as="p" variant="bodyLarge">
           I&apos;m a frontend-focused software engineer with 7+ years of
           professional experience.
