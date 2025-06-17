@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "company": "Octostar",
+        "companyLogo": "/images/experiences/octostar.png",
+        "title": "Senior Software Developer",
+        "startDate": "2025-02-01",
+        "endDate": "Present",
+        "description": "Developing and improving frontend architecture while collaborating across teams to deliver core features in a hybrid product company."
+    },
+    {
+        "id": 2,
+        "company": "QA Ltd",
+        "companyLogo": "/images/experiences/qaltd.png",
+        "title": "Senior Software Engineer",
+        "startDate": "2021-10-01",
+        "endDate": "2025-01-01",
+        "description": "Led accessibility improvements (WCAG), mentored teams on modern TypeScript patterns, and drove consistency across multiple frontend codebases."
+    },
+    {
+        "id": 3,
+        "company": "Whereby",
+        "companyLogo": "/images/experiences/whereby.png",
+        "title": "Software Engineer",
+        "startDate": "2021-01-01",
+        "endDate": "2021-07-01",
+        "description": "Delivered video conferencing features, reviewed architecture (React, Redux, Storybook), and collaborated remotely from Sweden and Italy."
+    },
+    {
+        "id": 4,
+        "company": "Twitch",
+        "companyLogo": "/images/experiences/twitch.png",
+        "title": "Frontend Engineer",
+        "startDate": "2019-09-01",
+        "endDate": "2020-12-01",
+        "description": "Collaborated closely with AWS teams and leadership to optimize app delivery. Built features using React, Redux, and TypeScript."
+    },
+    {
+        "id": 5,
+        "company": "IGDB",
+        "companyLogo": "/images/experiences/igdb.png",
+        "title": "Software Engineer",
+        "startDate": "2019-08-01",
+        "endDate": "2020-12-01",
+        "description": "Owned frontend UI and code quality for a community-driven games database. Introduced impactful features and improved dev workflows."
+    },
+    {
+        "id": 6,
+        "company": "Just For The Win",
+        "companyLogo": "/images/experiences/justforthewin.png",
+        "title": "Framework & Game Developer",
+        "startDate": "2017-05-01",
+        "endDate": "2019-08-01",
+        "description": "Collaborated closely with AWS teams and leadership to optimize app delivery. Built features using React, Redux, and TypeScript."
+    }
+]
