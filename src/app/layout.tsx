@@ -1,3 +1,4 @@
+import { Divider } from '../components/Divider';
 import { AboutSection } from '../sections/About';
 import { ContactSection } from '../sections/Contact';
 import { ExperiencesSection } from '../sections/Experiences';
@@ -10,8 +11,11 @@ export default function Layout() {
       <body className="h-full bg-gray-50 dark:bg-gray-900">
         <main>
           <IntroSection />
+          <Divider />
           <AboutSection />
+          <Divider />
           <ExperiencesSection />
+          <Divider />
           <ContactSection />
         </main>
       </body>
