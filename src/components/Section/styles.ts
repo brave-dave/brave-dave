@@ -9,4 +9,8 @@ export const sectionStyles = {
       backgroundColor: 'dark:bg-neutral-900',
     },
   },
+  content: {
+    maxWidth: 'max-w-7xl',
+    margin: 'mx-auto',
+  },
 } satisfies TailwindStylesMulti;

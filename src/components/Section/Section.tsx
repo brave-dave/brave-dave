@@ -9,7 +9,9 @@ type SectionProps = {
 export function Section({ children, styles }: SectionProps) {
   return (
     <TailwindComponent as="section" styles={[sectionStyles.root, styles]}>
-      {children}
+      <TailwindComponent styles={sectionStyles.content}>
+        {children}
+      </TailwindComponent>
     </TailwindComponent>
   );
 }
