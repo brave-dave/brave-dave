@@ -1,3 +1,10 @@
+import { Card } from '@/src/components/Card';
+import { Image } from '@/src/components/Image';
+
 export const AboutImage = () => {
-  return <div>AboutImage</div>;
+  return (
+    <Card>
+      <Image src="/images/about/main.jpg" alt="About me" />
+    </Card>
+  );
 };
