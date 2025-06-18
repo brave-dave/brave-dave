@@ -8,16 +8,30 @@ const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended
+  recommendedConfig: js.configs.recommended,
 });
 
-export default [
+const config = [
   ...compat.extends('plugin:prettier/recommended'),
   ...compat.extends('next/core-web-vitals'),
   ...compat.extends('next/typescript'),
   {
     rules: {
       'prettier/prettier': 'error',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
     },
   },
 ];
+
+export default config;

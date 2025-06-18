@@ -12,7 +12,7 @@ export const aboutSectionStyles = {
   content: {
     display: 'flex',
     flexDirection: 'flex-row',
-    alignItems: 'items-center',
+    alignItems: 'items-stretch',
     justifyContent: 'justify-center',
     gap: 'gap-4',
   },
